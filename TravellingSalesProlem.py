@@ -18,7 +18,6 @@ def tsp(cities):
 def dist(a, b):
     return ((a[0]-b[0])**2 + (a[1]-b[1])**2)**0.5
 
-# Example usage
 cities = [(0, 0), (1, 2), (3, 1), (2, 3)]
 shortest_path, shortest_distance = tsp(cities)
 print("Shortest path:", shortest_path)
