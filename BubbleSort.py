@@ -2,16 +2,16 @@
 
 def bubble_sort(arr):
     n = len(arr)
-    # Loop through all elements in the array
+    # Melakukan looping pada seluruh elemen dalam array
     for i in range(n):
-        # Last i elements are already sorted
+        # Elemen-elemen terakhir sebanyak i sudah diurutkan
         for j in range(0, n-i-1):
-            # Swap if the element found is greater than the next element
+            # Tukar jika elemen yang ditemukan lebih besar dari elemen berikutnya
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-# Example usage
+#Input Array
 arr = [64, 34, 25, 12, 22, 11, 90]
 sorted_arr = bubble_sort(arr)
 print("Sorted array:", sorted_arr)
